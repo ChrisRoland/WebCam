@@ -8,7 +8,9 @@ html {
 
 html {
   font-size: 10px;
-  background: #c5dadd;
+  background: linear-gradient(45deg, rgb(0, 238, 255), #834336, #00ff6a);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
 }
 
 .photobooth {
@@ -58,3 +60,15 @@ html {
 .strip a:nth-child(5n+3) img { transform: rotate(8deg); }
 .strip a:nth-child(5n+4) img { transform: rotate(-11deg); }
 .strip a:nth-child(5n+5) img { transform: rotate(12deg); }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
