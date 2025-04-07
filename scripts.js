@@ -49,7 +49,7 @@ function takePhoto() {
   const link = document.createElement('a');
   link.href = data;
   link.setAttribute('download', 'snapshot');
-  link.innerHTML = `<img src="${data}" alt="snapshotphoto" />`;
+  link.innerHTML = `<img src="${data}" alt="SnapshotPhoto" />`;
   strip.insertBefore(link, strip.firstChild);
 }
 
